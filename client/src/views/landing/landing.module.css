@@ -1,0 +1,72 @@
+.main {
+  background-image: url("../../assets/img/landingCountries.webp"); 
+  font-size: 50px;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+}
+
+
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  color: white;
+
+  font-size: 30px;
+}
+
+.btn button {
+  background-color: beige;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  margin-top: 60px;
+  width: 200px;
+  height: 65px;
+  font-size: 35px;
+  font-weight: bold;
+  /* box-shadow: 5px 5px 0px 0px steelblue; */
+  box-shadow: 6px 6px 0px 0px black;
+}
+
+.btn button:hover {
+  border: none;
+  cursor: pointer;
+  background-color: rgb(235, 235, 210);
+  color: black;
+  box-shadow: 6px 6px 0px 0px rgb(214, 208, 208);
+  /* filter: drop-shadow(0 0 2em steelblue); */
+}
+
+.btn button:active {
+  background-color: rgb(235, 235, 210);
+  border: none;
+  filter: drop-shadow(0 0 2em rgb(41, 42, 43));
+  box-shadow: 5px 5px 0px 0px rgb(18, 18, 19);
+  transform: translateY(4px);
+}
+
+/* .btn:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+.footer {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+ 
+  background-color: rgba(0, 0, 0, 0.507);
+}
+
+
+h2 span{
+  background-color: yellow;
+  color: black;
+  font-style: italic;
+  padding: 5px;
+}

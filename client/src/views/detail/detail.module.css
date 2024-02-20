@@ -1,0 +1,102 @@
+:root {
+  --primary-color: #007bff; /* Azul principal para enlaces y botones */
+  --secondary-color: #6c757d; /* Gris secundario para detalles */
+  --background-color: #f8f9fa; /* Color de fondo claro */
+  --text-color: #212529; /* Color de texto principal */
+  --link-color: #007bff; /* Color de los enlaces */
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Tipografía general */
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-rows: 100px auto 100px;
+  grid-template-areas:
+    ". up ."
+    ". detail ."
+    ". footer .";
+  min-height: 100vh;
+}
+
+.btn {
+  grid-area: up;
+  display: flex;
+  justify-content: center; /* Centrado más estético */
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.link:hover {
+  background-color:white;
+  color:  #007bff;
+  cursor: pointer;
+}
+
+.detail {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo más claro para el detalle */
+  color: var(--text-color);
+  margin: 20px;
+  grid-area: detail;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Espaciado entre elementos */
+}
+
+.detail img {
+  max-width: 80%; /* Imágenes más adaptables */
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.spans {
+  display: flex;
+  flex-wrap: wrap; /* Acomoda mejor los elementos */
+  justify-content: space-around;
+  width: 100%;
+  gap: 10px; /* Espaciado entre spans */
+}
+
+.spans span {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.list ul {
+  display: flex;
+  flex-wrap: wrap; /* Permite una mejor adaptabilidad */
+  justify-content: center;
+  gap: 20px; /* Mayor espacio entre elementos */
+}
+
+.list li {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list h3, .list p {
+  margin: 5px 0; /* Mejor espaciado entre texto */
+}

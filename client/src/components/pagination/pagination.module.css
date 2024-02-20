@@ -1,0 +1,49 @@
+.main {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.list ul {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: inline;
+}
+
+.list a,
+button {
+  color: white;
+  float: center;
+  font-size: 15px;
+  padding: 16px 16px;
+  text-decoration: none;
+  background-color: rgb(50, 50, 50);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  margin: 0 4px;
+}
+
+.list a:hover,
+button:hover {
+  background-color: steelblue;
+  color: white;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+  font-weight: normal;
+  background-color: grey;
+}
+
+.current a {
+  background-color: steelblue;
+}
+
+.current a:hover {
+  cursor: default;
+}
